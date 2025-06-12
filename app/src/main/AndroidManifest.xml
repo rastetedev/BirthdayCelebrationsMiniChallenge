@@ -23,6 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".birthday_invitation_card_one.BirthdayInvitationCardActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

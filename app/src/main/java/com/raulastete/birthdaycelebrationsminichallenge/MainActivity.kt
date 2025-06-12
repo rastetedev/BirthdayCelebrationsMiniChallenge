@@ -22,6 +22,23 @@ class MainActivity : ComponentActivity() {
         setContent {
 
             BirthdayCelebrationsMiniChallengeTheme {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center,
+                ) {
+                    Button(onClick = {
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                BirthdayInvitationCardActivity::class.java
+                            )
+                        )
+                    }) {
+                        Text("Mini challenge #1 - Birthday Invitation Card")
+                    }
+                }
+            }
         }
     }
 }
