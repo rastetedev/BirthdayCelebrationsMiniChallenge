@@ -15,11 +15,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -39,8 +36,8 @@ import androidx.compose.ui.unit.sp
 import com.raulastete.birthdaycelebrationsminichallenge.DeviceMode
 import com.raulastete.birthdaycelebrationsminichallenge.R
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.BackgroundColor
-import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.CardBackgroundColor
-import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnCardSurfaceColor
+import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnBackgroundColor
+import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnSurfaceColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnCardSurfaceWithAlphaColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.maliFontFamily
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.nunitoFontFamily
@@ -82,7 +79,7 @@ fun BirthdayInvitationCardScreen(deviceMode: DeviceMode) {
                 .padding(paddingValues)
                 .clip(RoundedCornerShape(16.dp)),
             shape = RoundedCornerShape(16.dp),
-            color = CardBackgroundColor
+            color = OnBackgroundColor
         ) {
             Box(
                 modifier = Modifier
@@ -175,7 +172,7 @@ fun BirthdayInformationItem(
                         fontFamily = nunitoFontFamily,
                         fontWeight = FontWeight.SemiBold,
                         fontSize = 21.sp,
-                        color = OnCardSurfaceColor
+                        color = OnSurfaceColor
                     )
                 ) { append("${title}: ") }
                 withStyle(

@@ -15,7 +15,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.BirthdayCelebrationsMiniChallenge">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +24,9 @@
         </activity>
         <activity
             android:name=".birthday_invitation_card_one.BirthdayInvitationCardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cake_lighting_controller_second.CakeLightingControllerActivity"
             android:exported="true" />
     </application>
 

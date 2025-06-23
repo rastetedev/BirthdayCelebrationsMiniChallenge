@@ -4,6 +4,7 @@ import android.content.res.Configuration.ORIENTATION_LANDSCAPE
 import android.content.res.Configuration.ORIENTATION_PORTRAIT
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
@@ -12,6 +13,7 @@ import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.ui.platform.LocalConfiguration
 import com.raulastete.birthdaycelebrationsminichallenge.DeviceMode
+import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.BackgroundColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.BirthdayCelebrationsMiniChallengeTheme
 
 class BirthdayInvitationCardActivity : ComponentActivity() {
@@ -19,7 +21,9 @@ class BirthdayInvitationCardActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        enableEdgeToEdge(
+            statusBarStyle = SystemBarStyle.dark(BackgroundColor.value.toInt())
+        )
         setContent {
             val widthSizeClass = calculateWindowSizeClass(this).widthSizeClass
             val heightSizeClass = calculateWindowSizeClass(this).heightSizeClass
@@ -45,7 +49,6 @@ class BirthdayInvitationCardActivity : ComponentActivity() {
                     DeviceMode.TabletLandscape
                 }
             }
-
 
             BirthdayCelebrationsMiniChallengeTheme {
                 BirthdayInvitationCardScreen(deviceMode)
