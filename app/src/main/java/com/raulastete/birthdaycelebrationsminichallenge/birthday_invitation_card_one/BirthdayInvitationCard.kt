@@ -36,7 +36,7 @@ import androidx.compose.ui.unit.sp
 import com.raulastete.birthdaycelebrationsminichallenge.DeviceMode
 import com.raulastete.birthdaycelebrationsminichallenge.R
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.BackgroundColor
-import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnBackgroundColor
+import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.SurfaceColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnSurfaceColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnCardSurfaceWithAlphaColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.maliFontFamily
@@ -79,7 +79,7 @@ fun BirthdayInvitationCardScreen(deviceMode: DeviceMode) {
                 .padding(paddingValues)
                 .clip(RoundedCornerShape(16.dp)),
             shape = RoundedCornerShape(16.dp),
-            color = OnBackgroundColor
+            color = SurfaceColor
         ) {
             Box(
                 modifier = Modifier

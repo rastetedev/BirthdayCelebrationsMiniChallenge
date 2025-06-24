@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.raulastete.birthdaycelebrationsminichallenge.R
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.BackgroundColor
-import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnBackgroundColor
+import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.SurfaceColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.OnSurfaceColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.SurfaceHigherColor
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.maliFontFamily
@@ -96,7 +96,7 @@ fun CakeLightingControllerScreen() {
                     fontFamily = maliFontFamily,
                     fontWeight = FontWeight.Bold,
                     fontSize = 33.sp,
-                    color = OnBackgroundColor,
+                    color = SurfaceColor,
                     textAlign = TextAlign.Center
                 )
             }

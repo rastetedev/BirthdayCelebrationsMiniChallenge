@@ -14,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.raulastete.birthdaycelebrationsminichallenge.birthday_invitation_card_one.BirthdayInvitationCardActivity
 import com.raulastete.birthdaycelebrationsminichallenge.cake_lighting_controller_second.CakeLightingControllerActivity
+import com.raulastete.birthdaycelebrationsminichallenge.countdown_to_cake_third.CountdownToCakeActivity
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.BirthdayCelebrationsMiniChallengeTheme
 
 class MainActivity : ComponentActivity() {
@@ -48,6 +49,17 @@ class MainActivity : ComponentActivity() {
                         )
                     }) {
                         Text("Mini challenge #2 - Cake Lighting Controller")
+                    }
+
+                    Button(onClick = {
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                CountdownToCakeActivity::class.java
+                            )
+                        )
+                    }) {
+                        Text("Mini challenge #3 - Countdown to cake")
                     }
                 }
             }

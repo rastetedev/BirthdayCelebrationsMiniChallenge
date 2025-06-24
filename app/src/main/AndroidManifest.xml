@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -27,6 +29,9 @@
             android:exported="true" />
         <activity
             android:name=".cake_lighting_controller_second.CakeLightingControllerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".countdown_to_cake_third.CountdownToCakeActivity"
             android:exported="true" />
     </application>
 
