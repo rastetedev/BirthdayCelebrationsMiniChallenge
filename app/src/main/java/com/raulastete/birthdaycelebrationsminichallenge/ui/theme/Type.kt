@@ -8,6 +8,10 @@ import com.raulastete.birthdaycelebrationsminichallenge.R
 
 val maliFontFamily = FontFamily(
     Font(
+        resId = R.font.mali_semibold,
+        weight = FontWeight.SemiBold,
+    ),
+    Font(
         resId = R.font.mali_bold,
         weight = FontWeight.Bold,
     ),
@@ -25,6 +29,10 @@ val nunitoFontFamily = FontFamily(
     Font(
         resId = R.font.nunito_semibold,
         weight = FontWeight.SemiBold,
+    ),
+    Font(
+        resId = R.font.nunito_bold,
+        weight = FontWeight.Bold,
     ),
     Font(
         resId = R.font.nunito_regular,

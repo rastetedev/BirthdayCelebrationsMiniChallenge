@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlinx.serialization)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -58,4 +59,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
 
     implementation(libs.androidx.constraintlayout.compose)
+
+    implementation(libs.androidx.material3.adaptive.navigation.suite)
+
+    implementation(libs.androidx.adaptive)
+    implementation(libs.androidx.adaptive.layout)
+    implementation(libs.androidx.adaptive.navigation)
+    implementation(libs.kotlinx.serialization.json)
 }

@@ -33,6 +33,9 @@
         <activity
             android:name=".countdown_to_cake_third.CountdownToCakeActivity"
             android:exported="true" />
+        <activity
+            android:name=".party_host_dashboard_fourth.PartyHostDashboardActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
