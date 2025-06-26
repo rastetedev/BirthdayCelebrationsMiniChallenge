@@ -33,9 +33,21 @@ Let users start a countdown that triggers a birthday notification after a few se
 
 ---
 
+## Mini challenge 4 : [Medium] - Party Host Dashboard
+### 🎭 Scenario
+You’re building a party planning dashboard, and the client is very picky about how it looks on different devices. On phones, they want it clean and focused. On tablets? “I want to see everything at once!” they say, gesturing wildly. You sigh, open Compose, and get to work making a UI that shape-shifts like a social butterfly — drawer on phones, two-pane layout on tablets.
+### 🎯 Feature Goal
+Create a responsive party host dashboard that shows different layouts on phone vs. tablet screens.
+### 🎥 Demo
+![Video](assets/mini_challenge_june_4_1.gif)
+![Video](assets/mini_challenge_june_4_2.gif)
+
+---
+
 ## 🧠 What I put in practice
 
-- Layouts with Jetpack Compose **adaptive layouts**, **adaptive navigation**, **animations**, **constraint layout in compose**, **edge-to-edge UI**, .
+- Layouts with Jetpack Compose **adaptive layouts**, **animations**, **constraint layout in compose**, **edge-to-edge UI**.
+- **Adaptive navigation** with NavigationSuiteScaffold, NavigableListDetailPaneScaffold and Custom Nav Types
 - Show **system notifications**
 - Handle side effects using **LaunchedEffect**
 
