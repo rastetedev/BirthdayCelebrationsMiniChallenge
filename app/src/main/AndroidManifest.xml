@@ -36,6 +36,9 @@
         <activity
             android:name=".party_host_dashboard_fourth.PartyHostDashboardActivity"
             android:exported="true" />
+        <activity
+            android:name=".gift_memory_match_fifth.GiftMemoryMatchActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.raulastete.birthdaycelebrationsminichallenge.birthday_invitation_card_one.BirthdayInvitationCardActivity
 import com.raulastete.birthdaycelebrationsminichallenge.cake_lighting_controller_second.CakeLightingControllerActivity
 import com.raulastete.birthdaycelebrationsminichallenge.countdown_to_cake_third.CountdownToCakeActivity
+import com.raulastete.birthdaycelebrationsminichallenge.gift_memory_match_fifth.GiftMemoryMatchActivity
 import com.raulastete.birthdaycelebrationsminichallenge.party_host_dashboard_fourth.PartyHostDashboardActivity
 import com.raulastete.birthdaycelebrationsminichallenge.ui.theme.BirthdayCelebrationsMiniChallengeTheme
 
@@ -92,6 +93,22 @@ class MainActivity : ComponentActivity() {
                     }) {
                         Text(
                             "Mini challenge #4 - Party Host Dashboard",
+                            textAlign = TextAlign.Center
+                        )
+                    }
+
+                    Spacer(Modifier.height(16.dp))
+
+                    Button(onClick = {
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                GiftMemoryMatchActivity::class.java
+                            )
+                        )
+                    }) {
+                        Text(
+                            "Mini challenge #5 - Gift Memory Match",
                             textAlign = TextAlign.Center
                         )
                     }
