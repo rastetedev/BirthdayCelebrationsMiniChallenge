@@ -44,12 +44,24 @@ Create a responsive party host dashboard that shows different layouts on phone v
 
 ---
 
+## Mini challenge 5 : [Hard] - Gift Memory Match
+### 🎭 Scenario
+You’re helping organize a birthday party, and someone forgot to label the gifts. Now you’re stuck playing detective, trying to remember which guest brought which gift. The twist? You’ve turned it into a game for everyone else. Build a memory-matching game where guests and gifts are hidden behind cards — match them all to win the party planner’s eternal gratitude (and maybe cake).
+### 🎯 Feature Goal
+Create a flip-card memory game where players match guests to their gifts.
+### 🎥 Demo
+![Video](assets/mini_challenge_june_5.gif)
+
+---
+
 ## 🧠 What I put in practice
 
 - Layouts with Jetpack Compose **adaptive layouts**, **animations**, **constraint layout in compose**, **edge-to-edge UI**.
 - **Adaptive navigation** with NavigationSuiteScaffold, NavigableListDetailPaneScaffold and Custom Nav Types
 - Show **system notifications**
 - Handle side effects using **LaunchedEffect**
+- Create flipped animation
+- Create a simple memory mini-game
 
 ---
 
